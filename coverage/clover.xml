@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1663866053428" clover="3.2.0">
+  <project timestamp="1663866053428" name="All files">
+    <metrics statements="25" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="7" elements="42" coveredelements="20" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
+    <file name="lab_car_dealership.js" path="/Users/daniellekyere/coursework/week_07/day_03/lab_car_dealership/lab_car_dealership.js">
+      <metrics statements="25" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="7"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
