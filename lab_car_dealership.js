@@ -38,26 +38,10 @@ const Dealership = function (name, maximumNumberofCars){
       const newArray =  this.getCars().map((car) => car.getPrice())
       const sumOfArray = newArray.reduce(( partialSum, a) => 
           {partialSum + a}, 0
-    );
+        );
+         return sumOfArray
+         } 
 
-    return sumOfArray
-
-    } 
-
-    //const array = this.getCars().map((car) => car.getPrice())
-    // 
-}
-
-
-//Find all the cars from a given manufacturer
-//filter
-// this.getCarsWithSpecificManufacturers = (manufacturer) => {
-//     this.getCarsManufacturers === manufacturer
-//     this.getCars().filter((_cars()) => {
-//         return this.getCarsManufacturers() === manufacturer
-
-//     });
-// };
 
 
 this.getCarsWithSpecificManufacturers = (manufacturer) => {
@@ -68,14 +52,10 @@ const checkManufacturer = (manufacturer) => {
   const chosenManufacturer = this.getCars().filter((manufacturer)=> {
     return checkManufacturer(manufacturer);
   });
-
+};
  // chosenManufacturer.map(())
 
 //const chosenManufacturer = this.getCars().filter((this.getCarsManufacturers())=> { this.getCarsManufacturers() === manufacturer
-
-};
-
-
     // this.getCarsWithSpecificManufacturers = (manufacturer) => if (this.getCars().getManufacturer() == manufacturer{}
     //we want to look at the cars in the dealership
     //for each car look at their manufactor
@@ -85,27 +65,17 @@ const checkManufacturer = (manufacturer) => {
 //     this.getCarsWithSpecificManufacturers = (manufacturer) => {if(this.getCars().getManufacturer() === manufacturer){return this.getCarsManufacturers()
 //     } else {return "are you sure this is the right manufacturer?"}
 // }
+
+//Find all the cars from a given manufacturer
+//filter
+// this.getCarsWithSpecificManufacturers = (manufacturer) => {
+//     this.getCarsManufacturers === manufacturer
+//     this.getCars().filter((_cars()) => {
+//         return this.getCarsManufacturers() === manufacturer
+
+//     });
+// };
   
-
-// Find the total value of all the cars in stock
-//this.getTotalValueOfStock = () => this.getCars().getPrice()
-
-
-
-
-
-const car1 = new Car ("Toyota", 2300, "v70")
-const car2 = new Car ("Honda", 2660, "x430")
-const car3 = new Car ("Audi", 5670, "a103")
-const dealer1 = new Dealership("rgwegr", 71,)
-dealer1.addCars(car1);
-dealer1.addCars(car2);
-dealer1.addCars(car3);
-//console.log(dealer1.getCarsManufacturers());
-//console.log(dealer1.getCarsWithSpecificManufacturers("Honda"));
-console.log(dealer1.getTotalValueOfStock());
-
-
 
 module.exports = {Car, Dealership};
 
