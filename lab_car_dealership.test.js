@@ -1,5 +1,6 @@
 
 const {Car} = require('./lab_car_dealership');
+const {Dealership} = require('./lab_car_dealership');
 
 
 describe ('Testing Car class', () => {
@@ -62,23 +63,23 @@ describe ('Testing Dealership class', () => {
 const car1 = new Car ("Toyota", 2300, "v70")
 const car2 = new Car ("Honda", 2660, "x430")
 const car3 = new Car ("Audi", 5670, "a103")
-const dealer1 = new Dealership("rgwegr", 71,)
+const dealer1 = new Dealership("getCars", 71,)
 dealer1.addCars(car1);
 dealer1.addCars(car2);
 
    
        test('should get dealership names',()=>{
           
-           expected = "Toyota"
-           actual =  car.getManufacturer()
+           expected = "getCars"
+           actual =  dealer1.getName()
            expect ((actual)).toBe(expected)
    
    });
    
        test('should set dealership names',()=>{
            
-           expected = "Honda"
-           actual =  car.setManufacturer("Honda")
+           expected = "newDealer"
+           actual =  dealer1.setName("newDealer")
            expect ((actual)).toBe(expected)
    
        });
@@ -110,47 +111,35 @@ dealer1.addCars(car2);
    
        test('should remove a car',()=>{
 
-        dealer1.removeCars()
-           expected = 1
+        dealer1.removeCars(car1)
+
+           expected = 2
            actual = dealer1.countCars()
            expect ((actual)).toBe(expected)
    
        });
 
+       test('get car manufacturers',()=>{
 
-       test('should remove a car',()=>{
-
-        dealer1.removeCars()
-           expected = 1
-           actual = dealer1.countCars()
+           expected = ['Honda', 'Audi' ]
+           actual = dealer1.getCarsManufacturers()
            expect ((actual)).toBe(expected)
    
        });
 
-
-       test('should remove a car',()=>{
-
-        dealer1.removeCars()
-           expected = 1
-           actual = dealer1.countCars()
-           expect ((actual)).toBe(expected)
+    //    test('get car with specific manufacturers',()=>{
+    //        expected = 1
+    //        actual = dealer1.getCarsWithSpecificManufacturers()
+    //        expect ((actual)).toBe(expected)
    
-       });
+    //    });
 
-       test('should remove a car',()=>{
+       test('get total price of cars in stock ',()=>{
 
-        dealer1.removeCars()
-           expected = 1
-           actual = dealer1.countCars()
-           expect ((actual)).toBe(expected)
-   
-       });
+        dealer1.getTotalValueOfStock()
 
-       test('should remove a car',()=>{
-
-        dealer1.removeCars()
-           expected = 1
-           actual = dealer1.countCars()
+           expected = 10630
+           actual = dealer1.getTotalValueOfStock()
            expect ((actual)).toBe(expected)
    
        });

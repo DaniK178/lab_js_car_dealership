@@ -36,23 +36,23 @@ const Dealership = function (name, maximumNumberofCars){
     this.getCarsManufacturers = ()=> this.getCars().map((car) => car.getManufacturer()) 
     this.getTotalValueOfStock = ()=> {
       const newArray =  this.getCars().map((car) => car.getPrice())
-      const sumOfArray = newArray.reduce(( partialSum, a) => 
-          {partialSum + a}, 0
+      const sumOfArray = newArray.reduce(
+        ( partialSum, a) => partialSum + a, 0
         );
          return sumOfArray
          } 
 
+    this.getCarsWithSpecificManufacturers = (manufacturer) => {
 
+    const checkManufacturer = (manufacturer) => {
+    return this.getCarsManufacturers() === manufacturer};
 
-this.getCarsWithSpecificManufacturers = (manufacturer) => {
+    const chosenManufacturer = this.getCars().filter((manufacturer)=> {
+        return checkManufacturer(manufacturer);
+    });
+    };
 
-const checkManufacturer = (manufacturer) => {
-  return this.getCarsManufacturers() === manufacturer};
-
-  const chosenManufacturer = this.getCars().filter((manufacturer)=> {
-    return checkManufacturer(manufacturer);
-  });
-};
+}
  // chosenManufacturer.map(())
 
 //const chosenManufacturer = this.getCars().filter((this.getCarsManufacturers())=> { this.getCarsManufacturers() === manufacturer
